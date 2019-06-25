@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='IE=edge' http-equiv='X-UA-Compatible'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+  </head>
+
+  <body bgcolor="#0FE7F0">
+    <h1>MDS And WC TimeIN/OUT</h1>
+  </body>
+
+  <body>
+    <!-- Contact Form - sent to a Google Sheet -->
+    <form id='foo'>
+      <p>
+        <label>Name</label>
+        <input id='name' name='name' type='text'>
+      </p><p>
+        <label>Time Clock In</label>
+        <input id='timein' name='timein' type='tel'>
+      </p><p>
+        <label>Time Clock Out</label>
+        <input id='timeout' name='timeout' type='tel'>
+      </p><p>
+        <label>Drive Time</label>
+        <input id='drivetime' name='drivetime' type='tel'>
+      </p><p>
+        <label>Total Hours Worked</label>
+        <input id='totalhrs' name='totalhrs' type='tel'>
+      </p><p>
+        <label>Company MDS/WC?</label>
+        <input id='companyname' name='companyname' type='text'>
+      </p>
+        <div id='success'></div>
+        <button type='submit'>Send</button>
+    </form>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <!-- Custom Theme JavaScript -->
+  <script src='google-sheet.js'></script>
+</html>
